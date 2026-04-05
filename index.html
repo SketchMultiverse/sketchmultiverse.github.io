@@ -1,39 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Sketchmultiverse Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketchmultiverse | Portfolio</title>
     <style>
-        body { background: #111; color: white; font-family: sans-serif; text-align: center; padding: 20px; }
-        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-        .art-card { background: #222; padding: 10px; border-radius: 10px; }
-        img { width: 100%; border-radius: 8px; border: 2px solid #444; }
+        body { 
+            background-color: #0b0e11; 
+            color: #ffffff; 
+            font-family: 'Segoe UI', sans-serif; 
+            margin: 0; 
+            padding: 40px 20px; 
+            text-align: center; 
+        }
+        h1 { color: #00aaff; margin-bottom: 5px; font-size: 2.5rem; }
+        .subtitle { color: #8b949e; margin-bottom: 40px; font-size: 1.1rem; }
+        
+        .gallery { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 25px; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+        }
+        
+        .art-card { 
+            background: #1c2128; 
+            padding: 15px; 
+            border-radius: 12px; 
+            border: 1px solid #30363d; 
+            transition: transform 0.3s, border-color 0.3s; 
+        }
+        
+        .art-card:hover { 
+            border-color: #00aaff; 
+            transform: translateY(-5px); 
+        }
+        
+        img { 
+            width: 100%; 
+            aspect-ratio: 1 / 1; 
+            object-fit: cover; 
+            border-radius: 8px; 
+            display: block; 
+        }
+        
+        .art-card p { 
+            margin-top: 15px; 
+            font-weight: bold; 
+            color: #adbac7; 
+        }
+        
+        footer { margin-top: 60px; color: #444; font-size: 0.8rem; }
     </style>
 </head>
 <body>
+
     <h1>The Sketchmultiverse Vault</h1>
-    <p>Digital Art created with Procreate & iPad</p>
-    
+    <p class="subtitle">Digital Artwork created with Procreate on iPad</p>
+
     <div class="gallery">
-        <div class="art-card">
-            <img src="IMG_0062.jpeg">
-            <p>Character Design 01</p>
-        </div>
-        <div class="art-card">
-            <img src="IMG_0063.jpeg">
-            <p>Character Design 02</p>
-        </div>
-        <div class="art-card">
-            <img src="IMG_0064.jpeg">
-            <p>Character Design 03</p>
-        </div>
-        <div class="art-card">
-            <img src="IMG_0065.jpeg">
-            <p>Character Design 04</p>
-        </div>
-        <div class="art-card">
-            <img src="IMG_0067.jpeg">
-            <p>Character Design 05</p>
-        </div>
+        <div class="art-card"><img src="IMG_0062.jpeg"><p>Mario</p></div>
+        <div class="art-card"><img src="IMG_0063.jpeg"><p>Character Study</p></div>
+        <div class="art-card"><img src="IMG_0064.jpeg"><p>Tom</p></div>
+        <div class="art-card"><img src="IMG_0065.jpeg"><p>Sonic & Shadow</p></div>
+        <div class="art-card"><img src="IMG_0067.jpeg"><p>Garfield</p></div>
+        
+        <div class="art-card"><img src="IMG_0068.jpeg"><p>Digital Sketch 06</p></div>
+        <div class="art-card"><img src="IMG_0069.jpeg"><p>Digital Sketch 07</p></div>
+        <div class="art-card"><img src="IMG_0070.jpeg"><p>Digital Sketch 08</p></div>
+        <div class="art-card"><img src="IMG_0071.jpeg"><p>Digital Sketch 09</p></div>
+        <div class="art-card"><img src="IMG_0072.jpeg"><p>Digital Sketch 10</p></div>
+
+        <div class="art-card"><img src="IMG_0075.jpeg"><p>Digital Sketch 11</p></div>
+        <div class="art-card"><img src="IMG_0077.jpeg"><p>Digital Sketch 12</p></div>
+        <div class="art-card"><img src="IMG_0083.jpeg"><p>Digital Sketch 13</p></div>
+        <div class="art-card"><img src="IMG_0084.jpeg"><p>Digital Sketch 14</p></div>
+
+        <div class="art-card"><img src="IMG_0107.jpeg"><p>Procreate Work 15</p></div>
+        <div class="art-card"><img src="IMG_0108.jpeg"><p>Procreate Work 16</p></div>
+        <div class="art-card"><img src="IMG_0115.jpeg"><p>Procreate Work 17</p></div>
+        <div class="art-card"><img src="IMG_0116.jpeg"><p>Procreate Work 18</p></div>
+        <div class="art-card"><img src="IMG_0117.jpeg"><p>Procreate Work 19</p></div>
+        <div class="art-card"><img src="IMG_0120.jpeg"><p>Procreate Work 20</p></div>
+        <div class="art-card"><img src="IMG_0121.jpeg"><p>Procreate Work 21</p></div>
+        <div class="art-card"><img src="IMG_0129.jpeg"><p>Procreate Work 22</p></div>
+        <div class="art-card"><img src="IMG_0136.jpeg"><p>Procreate Work 23</p></div>
+        <div class="art-card"><img src="IMG_0137.jpeg"><p>Procreate Work 24</p></div>
     </div>
+
+    <footer>
+        <p>&copy; 2026 Sketchmultiverse | Built for the Multiverse</p>
+    </footer>
+
 </body>
 </html>
